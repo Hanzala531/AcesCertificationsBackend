@@ -1,0 +1,6 @@
+BEGIN;
+
+ALTER TABLE ai_responses
+  ADD COLUMN IF NOT EXISTS is_question_approved BOOLEAN NOT NULL DEFAULT FALSE;
+
+COMMIT;

@@ -1,0 +1,6 @@
+BEGIN;
+
+ALTER TABLE assessment_queries
+  ADD COLUMN IF NOT EXISTS response_files JSONB DEFAULT NULL;
+
+COMMIT;

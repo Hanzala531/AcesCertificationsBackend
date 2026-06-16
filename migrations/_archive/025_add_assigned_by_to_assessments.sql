@@ -1,0 +1,2 @@
+-- Consolidated into 019_create_assessment_tables.sql
+-- (assigned_by column and its index are now defined in the certificate_assessments CREATE TABLE)

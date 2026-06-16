@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Created</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .greeting {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .role-badge {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+        .credentials-section {
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        .credentials-section h3 {
+            margin-top: 0;
+            color: #667eea;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .credential-item {
+            margin: 15px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .credential-item:last-child {
+            border-bottom: none;
+        }
+        .credential-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+        .credential-value {
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+            font-family: 'Courier New', monospace;
+            word-break: break-all;
+        }
+        .security-note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 30px 0;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #856404;
+        }
+        .security-note strong {
+            color: #721c24;
+        }
+        .action-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .login-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 40px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .login-button:hover {
+            transform: translateY(-2px);
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 Welcome!</h1>
+            <p>Your account has been created</p>
+        </div>
+
+        <div class="content">
+            <div class="greeting">
+                <p>Hello,</p>
+                <p>{{WELCOME_MESSAGE}}</p>
+            </div>
+
+            <div style="text-align: center;">
+                <span class="role-badge">{{role}}</span>
+            </div>
+
+            <p style="color: #666; line-height: 1.6;">
+                {{ACCOUNT_DESCRIPTION}}
+            </p>
+
+            <div class="credentials-section">
+                <h3>Login Credentials</h3>
+                <div class="credential-item">
+                    <div class="credential-label">📧 Email Address</div>
+                    <div class="credential-value">{{email}}</div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-label">🔐 Password</div>
+                    <div class="credential-value">{{password}}</div>
+                </div>
+            </div>
+
+            <div class="security-note">
+                <strong>⚠️ Security Notice:</strong> Please change your password on your first login. 
+                Keep your login credentials safe and never share them with anyone. 
+                Never share this email with unauthorized parties.
+            </div>
+
+            <!-- <div class="action-section">
+                <a href="{{loginUrl}}" class="login-button">Log In Now</a>
+            </div> -->
+
+            <p style="color: #666; font-size: 14px; margin-top: 30px;">
+                If you have any questions or need assistance, please contact our support team.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Aces Certifications</strong></p>
+            <p>© 2026 All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+-- Consolidated into 019_create_assessment_tables.sql
+-- (review_date column and its indexes are now defined in the certificate_assessments CREATE TABLE)

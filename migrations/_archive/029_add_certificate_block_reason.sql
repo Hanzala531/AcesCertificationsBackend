@@ -1,0 +1,2 @@
+-- Consolidated into 019_create_assessment_tables.sql
+-- (certificate_block_reason column is now defined in the certificate_assessments CREATE TABLE)

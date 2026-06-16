@@ -1,0 +1,2 @@
+-- Consolidated into 005_organization.sql
+-- (email column and unique indexes for email/contact_no are now defined in the organization CREATE TABLE)

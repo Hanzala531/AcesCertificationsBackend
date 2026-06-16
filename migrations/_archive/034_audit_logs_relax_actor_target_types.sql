@@ -1,0 +1,2 @@
+-- Consolidated into 034_audit_logs.sql
+-- (actor_id and target_id are now defined as TEXT directly in the audit_logs CREATE TABLE)

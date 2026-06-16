@@ -1,0 +1,1 @@
+ALTER TABLE employee ADD COLUMN IF NOT EXISTS phone_number VARCHAR(20);

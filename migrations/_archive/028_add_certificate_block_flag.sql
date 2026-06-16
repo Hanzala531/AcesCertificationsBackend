@@ -1,0 +1,2 @@
+-- Consolidated into 019_create_assessment_tables.sql
+-- (is_certificate_blocked column and its index are now defined in the certificate_assessments CREATE TABLE)

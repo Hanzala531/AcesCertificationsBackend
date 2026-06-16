@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>{{TITLE}}</title>
+</head>
+<body style="margin:0;padding:0;background:#f4f6f9;font-family:'Segoe UI',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f6f9;padding:32px 0;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0"
+               style="background:#ffffff;border-radius:8px;overflow:hidden;
+                      box-shadow:0 1px 3px rgba(0,0,0,.1);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:#1a56db;padding:24px 32px;">
+              <p style="margin:0;color:#fff;font-size:20px;font-weight:700;letter-spacing:-.3px;">
+                ACES Certification
+              </p>
+              <p style="margin:4px 0 0;color:rgba(255,255,255,.8);font-size:13px;">
+                Platform Notification
+              </p>
+            </td>
+          </tr>
+
+          <!-- Category badge -->
+          <tr>
+            <td style="padding:20px 32px 0;">
+              <span style="background:{{PRIORITY_COLOR_BG}};color:{{PRIORITY_COLOR}};
+                           padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">
+                {{MODULE_LABEL}}
+              </span>
+            </td>
+          </tr>
+
+          <!-- Title + Message -->
+          <tr>
+            <td style="padding:16px 32px 0;">
+              <h2 style="margin:0 0 10px;font-size:20px;color:#111827;line-height:1.3;">
+                {{TITLE}}
+              </h2>
+              <p style="margin:0;font-size:15px;color:#374151;line-height:1.6;">
+                {{MESSAGE}}
+              </p>
+            </td>
+          </tr>
+
+          <!-- Action button — replaced with full <tr> block or empty string -->
+          {{ACTION_BUTTON}}
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:32px;border-top:1px solid #e5e7eb;margin-top:24px;">
+              <p style="margin:0;font-size:12px;color:#9ca3af;line-height:1.5;">
+                This notification was sent by the ACES Certification platform.<br />
+                You can manage your notification preferences in your account settings.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
